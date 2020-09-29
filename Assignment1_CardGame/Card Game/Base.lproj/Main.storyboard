@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Card_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gsX-XC-mQX">
+                                <rect key="frame" x="20" y="54" width="335" height="714"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wX0-SB-BjJ" userLabel="Title View">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="55.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9F-CX-YbN">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="55.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.52019243140000004" green="0.27482240429999999" blue="0.18213338539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ccs-ed-5Xp" userLabel="Player1 Label View">
+                                        <rect key="frame" x="0.0" y="60.333333333333329" width="335" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbj-Z6-mqP">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-Dx-VHB" userLabel="Player1 View">
+                                        <rect key="frame" x="0.0" y="112.33333333333333" width="335" height="187.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="tpV-PW-G2k" userLabel="Card1">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="187.33333333333334"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_of_hearts" translatesAutoresizingMaskIntoConstraints="NO" id="S26-PK-6fU" userLabel="Card2">
+                                                <rect key="frame" x="115" y="0.0" width="105" height="187.33333333333334"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10_of_hearts" translatesAutoresizingMaskIntoConstraints="NO" id="EZv-Bx-n68" userLabel="Card3">
+                                                <rect key="frame" x="230" y="0.0" width="105" height="187.33333333333334"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="urJ-8c-na9" userLabel="Player2 Label View">
+                                        <rect key="frame" x="0.0" y="304.66666666666669" width="335" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anB-Zp-jrK">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qd1-ih-Fy6" userLabel="Player2 View">
+                                        <rect key="frame" x="0.0" y="356.66666666666669" width="335" height="187.00000000000006"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="W1r-dT-SK7" userLabel="Card4">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="187"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="king_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="tBn-gh-w64" userLabel="Card5">
+                                                <rect key="frame" x="115" y="0.0" width="105" height="187"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="Se5-VC-596" userLabel="Card6">
+                                                <rect key="frame" x="230" y="0.0" width="105" height="187"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eki-8D-WJt" userLabel="Result View">
+                                        <rect key="frame" x="0.0" y="548.66666666666663" width="335" height="130.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Winner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLB-Ui-FVn">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="130.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCQ-0a-qXS">
+                                        <rect key="frame" x="0.0" y="684" width="335" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="DZC-3i-byz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMv-T7-oCg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsX-XC-mQX" secondAttribute="trailing" constant="20" id="M76-hN-4km"/>
+                            <constraint firstItem="gsX-XC-mQX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="iTa-BX-Xgg"/>
+                            <constraint firstItem="gsX-XC-mQX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jpW-7r-GAV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gsX-XC-mQX" secondAttribute="bottom" constant="10" id="rk0-Cz-c1v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Winner" destination="TLB-Ui-FVn" id="YKC-9Z-VGy"/>
+                        <outlet property="card1" destination="tpV-PW-G2k" id="9Vh-FE-sMb"/>
+                        <outlet property="card2" destination="S26-PK-6fU" id="J9d-23-dgM"/>
+                        <outlet property="card3" destination="EZv-Bx-n68" id="f6Y-c3-6U2"/>
+                        <outlet property="card4" destination="W1r-dT-SK7" id="Hmz-yL-aWN"/>
+                        <outlet property="card5" destination="tBn-gh-w64" id="13c-Gf-JUy"/>
+                        <outlet property="card6" destination="Se5-VC-596" id="WPI-ci-ncF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10_of_clubs" width="55.666667938232422" height="81"/>
+        <image name="10_of_hearts" width="55.666667938232422" height="81"/>
+        <image name="2_of_hearts" width="55.666667938232422" height="81"/>
+        <image name="9_of_clubs" width="55.666667938232422" height="81"/>
+        <image name="ace_of_clubs" width="55.666667938232422" height="81"/>
+        <image name="king_of_spades" width="55.666667938232422" height="81"/>
+    </resources>
+</document>
