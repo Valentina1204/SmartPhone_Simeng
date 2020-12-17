@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.4.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - Realm (10.2.0):
+    - Realm/Headers (= 10.2.0)
+  - Realm/Headers (10.2.0)
+  - RealmSwift (10.2.0):
+    - Realm (= 10.2.0)
+  - SwiftSpinner (2.1.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - RealmSwift
+  - SwiftSpinner
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - Realm
+    - RealmSwift
+    - SwiftSpinner
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  Realm: d7914ebf66bb182469726f997c4c38eff286aab0
+  RealmSwift: aad08b7dc8c732b7b5794286e9df83739bf834f1
+  SwiftSpinner: 0f15c006307f8d8bbac075638927ec1361b565d7
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 53cdda666a7c7471879c88634b28bda4973300d7
+
+COCOAPODS: 1.10.0
